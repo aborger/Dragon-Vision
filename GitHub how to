@@ -1,0 +1,48 @@
+Instructions on how to use github:
+$ represents entering a command in command prompt (don't include $)
+While entering any command dealing with the repository it needs to be your working directory
+View directories and files with: $ dir
+Change directory with: $ cd <directory to change to>
+
+- Download and install git
+  - https://gitforwindows.org
+  - Check if it worked
+  - $ git --version
+      
+- Fork repository to your own account
+  - Press the button in the upper right hand corner
+  
+- Clone your forked version
+  This will place your forked version onto your machine so you can edit it from there
+  - Press green clone button and copy the url address
+  - $ git clone <paste url here>
+  You now have a cloned version on your machine
+ 
+- Make a branch
+  Whenever you start working on something new make a branch
+  This way if you mess it up and make it stop working you can just delete the branch and go back
+  - $ git branch <branch name>
+  You are now working in the new branch
+  
+- Commit changes
+  Do this every time you succesfully add a new feature or change something important
+  - Commit: $ git commit -a
+    It will open up a txt file, enter comments on what you changed
+    To exit txt editor press ':' and then 'wq' and enter
+  - If there are new files (untracked files): git add .
+    You will then need to commit again
+    
+- Merge branches
+  Pretty self explanitory this merges the branches
+  - Switch to main branch: $ git checkout master
+    git checkout can also be used to switch to any branch
+  - Merge: $ git merge <branch to be merged with master>
+    
+- Push to git
+  Saves your cloned version to your forked version on github
+  - $ git push
+  
+- Submit pull request
+  Reconnects your forked version to the main repository
+  - On github.com navigate to your forked version and press 'new pull request'
+  - This will send a request where the changes in files can be discussed and added to the main version
