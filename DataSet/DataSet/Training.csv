@@ -1,4 +1,4 @@
-filename,xmin,ymin,xadd,yadd,type
+filename,xmin,ymin,xmax,ymax,type
 1000Image.jpg,2152,1170,2857,3052,zombie
 1000Image.jpg,1202,912,1806,2347,zombie
 1000Image.jpg,466,1472,1360,3177,zombie
